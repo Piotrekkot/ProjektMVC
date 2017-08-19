@@ -1,0 +1,50 @@
+﻿@model ProjektMVC.DB.Przepi
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="back">
+
+
+    <h2>Usuwanie przepisów</h2>
+
+    <h3>Czy napewno skasować ten przepis?</h3>
+    <div>
+
+        <hr />
+        <dl class="dl-horizontal">
+
+
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Skladniki)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Skladniki)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Opis)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Opis)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" />
+                <a href="/Home/Przepis" class="btn btn-default">Powrót</a>
+
+            </div>
+        }
+    </div>
+    </div>

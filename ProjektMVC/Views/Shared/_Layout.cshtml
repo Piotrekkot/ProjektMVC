@@ -1,0 +1,82 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="mvc,projekt,apbd">
+    <meta name="description" content="projekt apbd">
+    <title>Projekt MVC</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+
+    <link rel="stylesheet" href=@Url.Content("~/Content/site.css")>
+
+</head>
+<body>
+    
+
+    <nav class="black" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="logo"><img src=@Url.Content("~/content/3035.jpg") alt="Moje logo" />Piotr Kotowski MVC</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/Home/index">Home</a></li>
+                <li><a href="/Home/Przepis">Dodaj Przepis</a></li>
+               
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Przepisy</a></li>
+                
+            </ul>
+
+
+            
+
+        </div>
+
+    </nav>
+
+    <header class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br><br><br>
+                <h1 class="header center">Witaj</h1>
+                <div class="row center">
+                    <p class="header col s12 light">Dodaj swój przepis</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="parallax"><img src=@Url.Content("~/content/dish1.jpg") alt="aa"></div>
+    </header>
+
+   @RenderBody()
+
+    <div class="footer-header parallax-container valign-wrapper">
+        <div class="parallax"><img src=@Url.Content("~/content/dish2.jpg") alt="Unsplashed background img 3"></div>
+    </div>
+
+
+    <footer class="page-footer red">
+       
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="www.google.pl">Piotr Kotowski</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- podlaczenie javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="~/Scripts/Init.js"></script>
+
+</body>
+</html>
